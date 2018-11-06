@@ -20,7 +20,7 @@ app.get("/contact", function(req,res){
 });
 
 // Forces node to start app and listen on default port and ip 
-app.listen(80, process.env.IP, function(req,res){
+app.listen(process.env.PORT, process.env.IP, function(req,res){
     console.log("####################");
     console.log("## SERVER STARTED ##");
     console.log("####################");
