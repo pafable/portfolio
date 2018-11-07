@@ -2,8 +2,9 @@
     text-align: center;
 }
 
-.navbar {
+.navbar navbar-expand-lg navbar-dark bg-dark {
     align-content: center;
+
 }
 
 .footer {
