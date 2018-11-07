@@ -4,6 +4,7 @@ var app = express();
 // Ignores .ejs extension
 app.set("view engine", "ejs");
 
+app.use(express.static(__dirname + "/public"));
 // When "/" is requested, client will see whatever is on index.ejs
 app.get("/", function(req,res){
     res.render("index");
