@@ -11,5 +11,9 @@
 }
 
 .indexP {
-    padding-left: 5%;
+    text-align: center;
+}
+
+.index-img {
+    align-content: center;
 }
