@@ -1,5 +1,6 @@
 .jumbotron {
     text-align: center;
+    background-color:yellow; 
 }
 
 .footer {
@@ -22,4 +23,8 @@
 
 #h1projects {
     text-align: center;
+}
+
+projectsparagrah {
+    padding-top: 5%
 }
