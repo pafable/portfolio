@@ -10,8 +10,11 @@
     text-align: center;
 }
 
-.index-img {
-    align-content: center;
+.indeximg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
 .index {
     font-weight: bold;
