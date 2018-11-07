@@ -1,6 +1,6 @@
 .jumbotron {
     text-align: center;
-    background-color:yellow; 
+    background-color: gray; 
 }
 
 .footer {
@@ -26,5 +26,5 @@
 }
 
 .projectsparagrah {
-    padding-top: 5%;
+    padding-top: 15%;
 }
