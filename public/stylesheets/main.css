@@ -29,5 +29,5 @@
 }
 
 #navbar {
-    position: static;
+    position: fixed;
 }
