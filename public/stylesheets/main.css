@@ -23,13 +23,15 @@
 
 #h1projects {
     text-align: center;
-}
-
-#h1projects {
     padding-top: 5%;
 }
 
 .navbar {
     position: fixed;
     width: 100%;
+}
+
+#h1contact {
+    text-align: center;
+    padding-top: 5%;
 }
