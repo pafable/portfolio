@@ -1,5 +1,6 @@
 .jumbotron {
     text-align: center;
+    padding-top: 10%;
 }
 
 .footer {
@@ -41,8 +42,4 @@
 #contact {
     text-align: center;
     padding-top: 10%;
-}
-
-.jumbotron {
-    padding-top: 5%;
 }
