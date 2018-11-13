@@ -1,5 +1,8 @@
 var express = require("express");
 var app = express();
+var contactRoutes = require("./routes/contact");
+var projectsRoutes = require("./routes/projects");
+var indexRoutes = require("./routes/index");
 
 // Ignores .ejs extension
 app.set("view engine", "ejs");
@@ -7,24 +10,14 @@ app.set("view engine", "ejs");
 // Grabs current directory and then appends /public
 app.use(express.static(__dirname + "/public"));
 
-// When "/" is requested, client will see whatever is on index.ejs
-app.get("/", function(req,res){
-    res.render("index");
-});
-
-// When "/projects" is requested, client will see whatever is on projects.ejs
-app.get("/projects", function(req,res){
-    res.render("projects");
-});
-
-// When "/" is requested, client will see whatever is on contact.ejs
-app.get("/contact", function(req,res){
-    res.render("contact");
-});
-
+//Test page
 app.get("/hello", function(req,res){
     res.send("hello world");
 });
+
+app.use(indexRoutes);
+app.use(projectsRoutes);
+app.use(contactRoutes);
 
 // Forces node to start app and listen on default port and ip 
 app.listen(process.env.PORT, process.env.IP, function(req,res){
