@@ -22,7 +22,8 @@ app.use(contactRoutes);
 
 // Route not found (404)
 app.use(function(req, res, next) {
-    return res.status(404).send({ message: 'Route'+req.url+' Not found.' });
+    res.send("404 not found");
+    // return res.status(404).send({ message: 'Route'+req.url+' Not found.' });
 });
 
 // Forces node to start app and listen on default port and ip 
