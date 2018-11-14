@@ -22,7 +22,7 @@ app.use(contactRoutes);
 
 // Route not found (404)
 app.use(function(req, res, next) {
-    res.send("404 not found");
+    res.render("404");
     // return res.status(404).send({ message: 'Route'+req.url+' Not found.' });
 });
 
