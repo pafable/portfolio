@@ -15,6 +15,10 @@ app.get("/hello", function(req,res){
     res.send("hello world");
 });
 
+app.use(function(req, res, next) {
+    res.send("404");
+});
+
 // Separated routes into routes dir
 app.use(indexRoutes);
 app.use(projectsRoutes);
