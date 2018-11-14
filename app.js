@@ -4,6 +4,7 @@ var contactRoutes = require("./routes/contact");
 var projectsRoutes = require("./routes/projects");
 var indexRoutes = require("./routes/index");
 var errRoutes = require("./routes/error");
+
 // Ignores .ejs extension
 app.set("view engine", "ejs");
 
