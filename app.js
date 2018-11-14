@@ -15,6 +15,7 @@ app.get("/hello", function(req,res){
     res.send("hello world");
 });
 
+// Separated routes into routes dir
 app.use(indexRoutes);
 app.use(projectsRoutes);
 app.use(contactRoutes);
