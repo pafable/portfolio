@@ -7,5 +7,9 @@ router.use(function(req, res, next) {
     res.render("404");
 });
 
+app.use(function(err, req, res, next) {
+    res.send("Internal Server Error");
+  });
+
 // Export router
 module.exports = router;

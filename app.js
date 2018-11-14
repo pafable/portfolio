@@ -3,7 +3,7 @@ var app = express();
 var contactRoutes = require("./routes/contact");
 var projectsRoutes = require("./routes/projects");
 var indexRoutes = require("./routes/index");
-var err404Routes = require("./routes/404Routes");
+var errRoutes = require("./routes/error");
 // Ignores .ejs extension
 app.set("view engine", "ejs");
 
@@ -19,12 +19,7 @@ app.get("/hello", function(req,res){
 app.use(indexRoutes);
 app.use(projectsRoutes);
 app.use(contactRoutes);
-app.use(err404Routes);
-
-// 404 Route not found 
-// app.use(function(req, res, next) {
-//     res.render("404");
-// });
+app.use(errRoutes);
 
 // Forces node to start app and listen on default port and ip 
 app.listen(process.env.PORT, process.env.IP, function(req,res){
