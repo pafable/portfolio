@@ -11,10 +11,10 @@ app.set("view engine", "ejs");
 // Grabs current directory and then appends /public
 app.use(express.static(__dirname + "/public"));
 
-//Test page
-app.get("/hello", function(req,res){
-    res.send("hello world");
-});
+//Test page - Uncomment for testing only
+// app.get("/hello", function(req,res){
+//     res.send("hello world");
+// });
 
 // Separated routes into routes dir
 app.use(indexRoutes);
