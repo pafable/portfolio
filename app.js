@@ -10,11 +10,6 @@ app.set("view engine", "ejs");
 // Grabs current directory and then appends /public
 app.use(express.static(__dirname + "/public"));
 
-app.use(app.router);
-app.use(function(req, res){
-    res.send(404, "404 Not found");
-});
-
 //Test page
 app.get("/hello", function(req,res){
     res.send("hello world");
