@@ -11,7 +11,7 @@ app.set("view engine", "ejs");
 // Grabs current directory and then appends /public
 app.use(express.static(__dirname + "/public"));
 
-//Test page - Uncomment for testing only
+// Test page - Uncomment for testing only
 // app.get("/hello", function(req,res){
 //     res.send("hello world");
 // });
